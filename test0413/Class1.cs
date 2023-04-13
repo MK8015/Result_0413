@@ -10,6 +10,7 @@ namespace test0413
     {
         public string dbconnect() {
             string con = "server=192.168.0.53;userid=root;password=1111;database=test_db";
+            
             return con;
         }
     }
