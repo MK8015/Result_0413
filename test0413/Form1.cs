@@ -97,6 +97,7 @@ namespace test0413
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
+                i += 1;
                 dataGridView1.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString()
                     , dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString()
                     , dr[7].ToString());
