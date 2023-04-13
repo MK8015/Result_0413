@@ -26,17 +26,17 @@ namespace test0413
             if (colName == "colEdit")
             {
                 Form2 frm = new Form2(this);
-                frm.btnSave.Enabled = false;
-                frm.btnUpdate.Enabled = true;
-                frm.txtEmpNo.Enabled = false;
-                frm.txtEmpNo.Text = _id; 
-                frm.txtAddress.Text = _address; 
-                frm.txtContact.Text = _contact; 
-                frm.txtFname.Text = _fname; 
-                frm.txtLname.Text = _lname; 
-                frm.txtMname.Text = _mname;
-                frm.cboGender.Text = _gender;
-                frm.dtBdate.Value = DateTime.Parse(_bdate);
+                frm.BtnSave.Enabled = false;
+                frm.BtnUpdate.Enabled = true;
+                frm.TxtEmpNo.Enabled = false;
+                frm.TxtEmpNo.Text = _id; 
+                frm.TxtAddress.Text = _address; 
+                frm.TxtContact.Text = _contact; 
+                frm.TxtFname.Text = _fname; 
+                frm.TxtLname.Text = _lname; 
+                frm.TxtMname.Text = _mname;
+                frm.CboGender.Text = _gender;
+                frm.DtBdate.Value = DateTime.Parse(_bdate);
                 frm.ShowDialog();
             }else if(colName == "colDelete")
             {
@@ -81,9 +81,9 @@ namespace test0413
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form2 frm = new Form2(this);
-            frm.txtEmpNo.Enabled = true;
-            frm.btnSave.Enabled = true;
-            frm.btnUpdate.Enabled = false ;
+            frm.TxtEmpNo.Enabled = true;
+            frm.BtnSave.Enabled = true;
+            frm.BtnUpdate.Enabled = false ;
             frm.ShowDialog();
 
         }

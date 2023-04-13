@@ -21,16 +21,84 @@ namespace test0413
         Class1 clscon = new Class1();
         Form1 f1;
 
+        public System.Windows.Forms.TextBox TxtEmpNo 
+        {
+            get
+            {
+                return txtEmpNo;
+            }
+        }
+        public System.Windows.Forms.Button BtnSave
+        {
+            get
+            {
+                return btnSave;
+            }
+        }
+
+        public System.Windows.Forms.Button BtnUpdate
+        {
+            get
+            {
+                return btnUpdate;
+            }
+        }
+        public System.Windows.Forms.TextBox TxtLname
+        {
+            get
+            {
+                return txtLname;
+            }
+        }
+
+        public System.Windows.Forms.TextBox TxtFname
+        {
+            get
+            {
+                return txtFname;
+            }
+        }
+        public System.Windows.Forms.TextBox TxtMname
+        {
+            get
+            {
+                return txtMname;
+            }
+        }
+        public System.Windows.Forms.DateTimePicker DtBdate
+        {
+            get
+            {
+                return dtBdate;
+            }
+        }
+        public System.Windows.Forms.ComboBox CboGender
+        {
+            get
+            {
+                return cboGender;
+            }
+        }
+        public System.Windows.Forms.TextBox TxtAddress
+        {
+            get
+            {
+                return txtAddress;
+            }
+        }
+        public System.Windows.Forms.TextBox TxtContact
+        {
+            get
+            {
+                return txtContact;
+            }
+        }
+
         public Form2(Form1 frm1)
         {
             InitializeComponent();
             cn = new MySqlConnection(clscon.dbconnect());
             f1 = frm1;
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
